@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5d0f8ff-0c59-48e1-b695-e8db6c6a4c85" name="Changes" comment="" />
+    <list default="true" id="d5d0f8ff-0c59-48e1-b695-e8db6c6a4c85" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/client/InboxController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/client/inbox.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/StartClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/client/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/client/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/server/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/StartServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/Server.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,16 +25,33 @@
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
+      <entry key="_C:/Users/ACER/Desktop/UNI/2026-2027/Primo semestre/LAB/Prog III/PROGETTO-D'ESAME/Prog3-2627/client" value="3MKszH3lxr3hTMn2I42K6tMxbu5" />
       <entry key="_C:/Users/ACER/Desktop/client" value="3MKmjJAL0egILpIMZyp0HVLAxtz" />
     </persistenceIdMap>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lukeugo&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Mattiarey/Prog3-2627.git&quot;,
+    &quot;accountId&quot;: &quot;569e25df-10d7-49d4-b3e0-0b6d8cd648ec&quot;
+  }
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -31,61 +61,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="3.999091664698605E-88" />
-      <entry key="MS500" value="3.314303471885347E-18" />
-      <entry key="S2" value="4.2669663592806824E-5" />
-      <entry key="S5" value="0.01900912524551465" />
-      <entry key="S10" value="0.22886842602705804" />
-      <entry key="S30" value="2.336038068874974" />
-      <entry key="S60" value="4.535326485988699" />
-      <entry key="M2" value="6.373754682901027" />
-      <entry key="M5" value="7.835655835485256" />
-      <entry key="M10" value="8.396966080604763" />
-      <entry key="M15" value="8.593190258969042" />
-      <entry key="M30" value="8.794162606574002" />
-      <entry key="H1" value="8.89646575530633" />
-      <entry key="H2" value="8.94807805352675" />
-      <entry key="H4" value="8.97400020296118" />
-      <entry key="D1" value="8.995661298273436" />
-      <entry key="W1" value="8.999380053037434" />
-    </decayedCancelled>
-    <decayedSelected>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0" />
-      <entry key="M5" value="1.0" />
-      <entry key="M10" value="1.0" />
-      <entry key="M15" value="1.0" />
-      <entry key="M30" value="1.0" />
-      <entry key="H1" value="1.0" />
-      <entry key="H2" value="1.0" />
-      <entry key="H4" value="1.0" />
-      <entry key="D1" value="1.0" />
-      <entry key="W1" value="1.0" />
+      <entry key="S2" value="1.0000000001537162" />
+      <entry key="S5" value="1.0001974194949041" />
+      <entry key="S10" value="1.0240099707800774" />
+      <entry key="S30" value="1.7947254368918455" />
+      <entry key="S60" value="3.928530478543613" />
+      <entry key="M2" value="9.9577955188669" />
+      <entry key="M5" value="27.63698176469711" />
+      <entry key="M10" value="48.414364278433105" />
+      <entry key="M15" value="60.84534742442567" />
+      <entry key="M30" value="78.25121291366752" />
+      <entry key="H1" value="89.51887280641577" />
+      <entry key="H2" value="95.95468624841409" />
+      <entry key="H4" value="99.39732290615632" />
+      <entry key="D1" value="102.38809824826842" />
+      <entry key="W1" value="102.91230034982328" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="3.312694561008533E-139" />
+      <entry key="MS500" value="2.013892474000069E-28" />
+      <entry key="S2" value="1.1912668859844836E-7" />
+      <entry key="S5" value="0.0016998227126687486" />
+      <entry key="S10" value="0.0412289179479802" />
+      <entry key="S30" value="0.34839576086309587" />
+      <entry key="S60" value="0.6821690293535937" />
+      <entry key="M2" value="1.4523433256124199" />
+      <entry key="M5" value="3.585444499439768" />
+      <entry key="M10" value="5.445830203833786" />
+      <entry key="M15" value="6.369506234409279" />
+      <entry key="M30" value="7.527285709235336" />
+      <entry key="H1" value="8.218003067434568" />
+      <entry key="H2" value="8.59667499760891" />
+      <entry key="H4" value="8.79513167828063" />
+      <entry key="D1" value="8.965399002345716" />
+      <entry key="W1" value="8.995045679045587" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="6.38826765141661E-8" />
-      <entry key="MS500" value="0.03639792457713925" />
-      <entry key="S2" value="0.43682756417754276" />
-      <entry key="S5" value="0.7366882802135425" />
-      <entry key="S10" value="1.0740472703945814" />
-      <entry key="S30" value="3.2739580987599117" />
-      <entry key="S60" value="5.499876220647713" />
-      <entry key="M2" value="7.354248275382484" />
-      <entry key="M5" value="8.827294537391024" />
-      <entry key="M10" value="9.3926788123044" />
-      <entry key="M15" value="9.590307279550814" />
-      <entry key="M30" value="9.792708428497164" />
-      <entry key="H1" value="9.895735439068979" />
-      <entry key="H2" value="9.947712081623015" />
-      <entry key="H4" value="9.973817012683758" />
-      <entry key="D1" value="9.995630738107062" />
-      <entry key="W1" value="9.999375686601585" />
+      <entry key="MS100" value="0.9201876506248751" />
+      <entry key="MS500" value="0.9835020740262483" />
+      <entry key="S2" value="0.9958498438135491" />
+      <entry key="S5" value="1.0000428996255593" />
+      <entry key="S10" value="1.0613279839863128" />
+      <entry key="S30" value="2.129326510918604" />
+      <entry key="S60" value="4.591863608971309" />
+      <entry key="M2" value="11.382224971772906" />
+      <entry key="M5" value="31.19171677961916" />
+      <entry key="M10" value="53.836356669746905" />
+      <entry key="M15" value="67.19606044320194" />
+      <entry key="M30" value="85.76722826766444" />
+      <entry key="H1" value="97.73066661044052" />
+      <entry key="H2" value="104.5480968600307" />
+      <entry key="H4" value="108.19078019533359" />
+      <entry key="D1" value="111.35321212183658" />
+      <entry key="W1" value="111.90730514494706" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -118,15 +148,20 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
+    &quot;Application.client.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ACER/Desktop/UNI/2026-2027/Primo semestre/LAB/Prog III/PROGETTO-D'ESAME/client&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ACER/Desktop/UNI/2026-2027/Primo semestre/LAB/Prog III/PROGETTO-D'ESAME/Prog3-2627/client&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
