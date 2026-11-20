@@ -5,18 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5d0f8ff-0c59-48e1-b695-e8db6c6a4c85" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/client/InboxController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/client/inbox.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/main/resources/accounts.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/StartClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/client/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/client/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/StartClient.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/server/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/StartServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/server/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/server/DataModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/DataModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/server/StartServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

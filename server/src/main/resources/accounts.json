@@ -1,0 +1,19 @@
+[
+  {
+    "AccountId": "1",
+    "AccountName": "Mario Rossi",
+    "AccountMail": "mariorossi@unito.it",
+  },
+
+  {
+    "AccountId": "2",
+    "AccountName": "Graziella Verdi",
+    "AccountMail": "graziellaverdi@unito.it",
+  },
+
+  {
+    "AccountId": "3",
+    "AccountName": "Luca Bianchi",
+    "AccountMail": "lucabianchi@unito.it",
+  }
+]
