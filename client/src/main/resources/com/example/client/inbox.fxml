@@ -4,20 +4,22 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.example.client.InboxController">
+<VBox
+        alignment="CENTER"
+        spacing="20.0"
+        xmlns:fx="http://javafx.com/fxml/1"
+        xmlns="http://javafx.com/javafx/17.0.12"
+        fx:controller="com.example.client.InboxController"
+>
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-
     <ListView fx:id="mailListView" />
-
     <TableView fx:id="mailTableView">
         <columns>
             <TableColumn fx:id="senderColumn" text="Mittente" />
             <TableColumn fx:id="subjectColumn" text="Oggetto" />
         </columns>
     </TableView>
-
     <Button fx:id="exitButton" onAction="#onExitButtonClick" text="Esci"/>
-
 </VBox>

@@ -5,21 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5d0f8ff-0c59-48e1-b695-e8db6c6a4c85" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/client/DataModelAwareController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/client/model/DataModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/client/model/MailMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/inbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/DataModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/ViewChanger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/InboxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/InboxController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/client/inbox.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/client/inbox.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/client/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/client/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/server/DataModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/DataModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/resources/accounts.json" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/resources/accounts.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,61 +57,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="3.669276969462748E-13" />
-      <entry key="MS500" value="0.0039000502322405857" />
-      <entry key="S2" value="0.39811320181509613" />
-      <entry key="S5" value="1.0435133990985923" />
-      <entry key="S10" value="1.4451568664793086" />
-      <entry key="S30" value="1.9929390504461946" />
-      <entry key="S60" value="2.613793536896607" />
-      <entry key="M2" value="3.5847494107359656" />
-      <entry key="M5" value="8.337987677061092" />
-      <entry key="M10" value="20.87378171892004" />
-      <entry key="M15" value="34.78465291892883" />
-      <entry key="M30" value="76.96622542013517" />
-      <entry key="H1" value="143.46477180209394" />
-      <entry key="H2" value="213.00827167555565" />
-      <entry key="H4" value="265.5225156346718" />
-      <entry key="D1" value="322.7404264125961" />
-      <entry key="W1" value="334.0646291145754" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0002777356513362" />
+      <entry key="S2" value="1.1291588197227258" />
+      <entry key="S5" value="1.4619965485542399" />
+      <entry key="S10" value="1.8199900619667289" />
+      <entry key="S30" value="3.0416252444384932" />
+      <entry key="S60" value="4.631378258462419" />
+      <entry key="M2" value="7.536369572220316" />
+      <entry key="M5" value="14.803641253495927" />
+      <entry key="M10" value="23.459284576021023" />
+      <entry key="M15" value="31.456928157130786" />
+      <entry key="M30" value="60.47095714737266" />
+      <entry key="H1" value="122.77842059946335" />
+      <entry key="H2" value="205.5100478506584" />
+      <entry key="H4" value="277.74965812158007" />
+      <entry key="D1" value="364.7176280804741" />
+      <entry key="W1" value="382.8682721127367" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000000000000009" />
-      <entry key="S5" value="1.0000009310745352" />
-      <entry key="S10" value="1.0009649220357837" />
-      <entry key="S30" value="1.0988168434192467" />
-      <entry key="S60" value="1.3146213665252864" />
-      <entry key="M2" value="1.588506664864104" />
-      <entry key="M5" value="2.5390231070363" />
-      <entry key="M10" value="4.938887046208665" />
-      <entry key="M15" value="7.570075566415017" />
-      <entry key="M30" value="15.30282692721481" />
-      <entry key="H1" value="26.70214823317471" />
-      <entry key="H2" value="37.97733618847135" />
-      <entry key="H4" value="46.21343999250961" />
-      <entry key="D1" value="54.99039755052595" />
-      <entry key="W1" value="56.707198355475015" />
+      <entry key="MS100" value="2.267667382433136E-11" />
+      <entry key="MS500" value="0.0074321740339524526" />
+      <entry key="S2" value="0.29419174980699553" />
+      <entry key="S5" value="0.6631189312197249" />
+      <entry key="S10" value="1.0075980357707446" />
+      <entry key="S30" value="1.531447087389571" />
+      <entry key="S60" value="1.835336863361291" />
+      <entry key="M2" value="2.6095974845747056" />
+      <entry key="M5" value="4.6033835026787635" />
+      <entry key="M10" value="6.7425471890304225" />
+      <entry key="M15" value="8.875573177986237" />
+      <entry key="M30" value="15.996102651846813" />
+      <entry key="H1" value="28.87398886890781" />
+      <entry key="H2" value="44.1841783369211" />
+      <entry key="H4" value="56.80936106659688" />
+      <entry key="D1" value="71.47623779442861" />
+      <entry key="W1" value="74.48286360472956" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="3.9219430190642965E-6" />
-      <entry key="MS500" value="0.0848488661439114" />
-      <entry key="S2" value="0.8573807595375962" />
-      <entry key="S5" value="1.7325808484841079" />
-      <entry key="S10" value="2.263964525818397" />
-      <entry key="S30" value="3.0214376984051436" />
-      <entry key="S60" value="3.8892831203513634" />
-      <entry key="M2" value="5.150195112462616" />
-      <entry key="M5" value="10.858288738696528" />
-      <entry key="M10" value="25.78912540202559" />
-      <entry key="M15" value="42.32783129214137" />
-      <entry key="M30" value="92.23925360985018" />
-      <entry key="H1" value="170.14058917097947" />
-      <entry key="H2" value="250.96699739148266" />
-      <entry key="H4" value="311.7246995751159" />
-      <entry key="D1" value="377.72860545226246" />
-      <entry key="W1" value="390.7715010245499" />
+      <entry key="MS100" value="1.263751127736149E-4" />
+      <entry key="MS500" value="0.16648896978142513" />
+      <entry key="S2" value="0.8365133039827621" />
+      <entry key="S5" value="1.6714014587325865" />
+      <entry key="S10" value="2.50405187628548" />
+      <entry key="S30" value="4.406960483354957" />
+      <entry key="S60" value="6.359454499536577" />
+      <entry key="M2" value="10.07335510955717" />
+      <entry key="M5" value="19.362402664611704" />
+      <entry key="M10" value="30.16841142410928" />
+      <entry key="M15" value="40.30060061199854" />
+      <entry key="M30" value="76.4342566886128" />
+      <entry key="H1" value="151.62163387377143" />
+      <entry key="H2" value="249.67076669610324" />
+      <entry key="H4" value="334.5440659255056" />
+      <entry key="D1" value="436.19076186560545" />
+      <entry key="W1" value="457.35067454934887" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -149,27 +141,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
-    &quot;Application.client.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ACER/Desktop/UNI/2026-2027/Primo semestre/LAB/Prog III/PROGETTO-D'ESAME/Prog3-2627/client&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Launcher.executor": "Run",
+    "Application.client.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ACER/Desktop/UNI/2026-2027/Primo semestre/LAB/Prog III/PROGETTO-D'ESAME/Prog3-2627/client",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\Desktop\UNI\2026-2027\Primo semestre\LAB\Prog III\PROGETTO-D'ESAME\Prog3-2627\client\src\main\resources" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.example.client.Client" />

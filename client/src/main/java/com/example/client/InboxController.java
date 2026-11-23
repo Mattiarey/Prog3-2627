@@ -13,6 +13,7 @@ public class InboxController implements DataModelAwareController{
     @FXML
     private ListView mailListView;
 
+
     @FXML
     private TableView mailTableView;
 
@@ -25,18 +26,18 @@ public class InboxController implements DataModelAwareController{
         /*
             Binding delle properties della inbox nel model con i valori della view
          */
-
-        /* POOL DI PROCESSI PER IL POLLING DI RICHIESTA
-        ScheduledExecutorService exec = Executors.newScheduledThreadPool(1);
-        ScheduledFuture<String>pollingInbox = exec.schedule(new Polling(), 5, TimeUnit.SECONDS);
-        */
+        try(ScheduledExecutorService exec = Executors.newScheduledThreadPool(1)) {
+                exec.scheduleAtFixedRate(new Polling(), 3, 3, TimeUnit.SECONDS);
+        }
+        catch(Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
     
-    public static class Polling implements Callable<String> {
+    public static class Polling implements Runnable {
         @Override
-        public String call() throws Exception {
+        public void run() {
             //chiamata al server con richiesta della mia inbox
-            return "";
         }
     }
 
