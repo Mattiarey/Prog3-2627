@@ -1,8 +1,7 @@
 package com.example.client;
 
+import com.example.client.model.DataModel;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -15,11 +14,9 @@ public class Client {
     public static class StartClient extends Application {
         @Override
         public void start(Stage stage) throws IOException {
-            FXMLLoader fxmlLoader = new FXMLLoader(StartClient.class.getResource("login.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 600, 500);
-            stage.setTitle("Client");
-            stage.setScene(scene);
-            stage.show();
+            DataModel dataModel = new DataModel();
+            ViewChanger viewChanger = new ViewChanger(stage, dataModel);
+            viewChanger.setView("login.fxml", "Client - Pagina di Login", 600, 500);
         }
     }
 }

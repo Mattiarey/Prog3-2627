@@ -17,6 +17,4 @@
     <Label fx:id="welcomeText"/>
     <Button text="Login" onAction="#onLoginButtonClick"/>
 
-
-
 </VBox>

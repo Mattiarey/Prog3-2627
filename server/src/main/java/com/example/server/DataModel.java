@@ -1,40 +1,40 @@
 package com.example.server;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 
 public class DataModel {
-    private ArrayList<Account> mailAccounts;
-    private ObjectMapper objectMapper;
-    private JsonNode jsonNode;
+    private ArrayList<Account>mailAccounts;
 
     public DataModel() throws IOException {
         mailAccounts = new ArrayList<>();
-        objectMapper = new ObjectMapper();
-
-        try (InputStream is = DataModel.class.getResourceAsStream("/accounts.json")) {
-            if (is == null) {
-                throw new IOException("Risorsa /accounts.json non trovata nel classpath");
-            }
-            this.jsonNode = objectMapper.readTree(is);
-        }
     }
 
     private void getMailAccounts() {
-        if (jsonNode != null && jsonNode.isArray()) {
-            for (int i = 0; i < jsonNode.size(); i++) {
-                Account account = objectMapper.convertValue(jsonNode.get(i), Account.class);
-                mailAccounts.add(account);
+        JSONParser parser = new JSONParser();
+        try (FileReader reader = new FileReader("src/main/resources/accounts.json")) {
+            JSONArray accountsArray = (JSONArray) parser.parse(reader);
+
+            for (Object obj : accountsArray) {
+                JSONObject account = (JSONObject) obj;
+
+                int id = Integer.parseInt(String.valueOf(account.get("AccountId")));
+                String name = (String) account.get("AccountName");
+                String mail = (String) account.get("AccountMail");
+
+                mailAccounts.add(new Account(id, name, mail));
             }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
     public void setup() {
         getMailAccounts();
-        System.out.println("Working dir: " + System.getProperty("user.dir"));
-        System.out.println(mailAccounts);
     }
 }
