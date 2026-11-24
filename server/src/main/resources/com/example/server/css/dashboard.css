@@ -1,0 +1,37 @@
+.root-pane {
+    -fx-background-color: #f4f6f8;
+}
+
+.section-title {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2b303a;
+}
+
+.list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d0d7de;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+}
+
+/* Stile terminale per il log del server */
+.terminal-view {
+    -fx-background-color: #121212;
+    -fx-control-inner-background: #121212;
+    -fx-border-color: #2d2d2d;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-font-family: "Consolas", "JetBrains Mono", "DejaVu Sans Mono", monospace;
+    -fx-font-size: 13px;
+}
+
+.terminal-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #d8dee9;
+    -fx-padding: 3 8 3 8;
+}
+
+.terminal-view .list-cell:empty {
+    -fx-background-color: transparent;
+}

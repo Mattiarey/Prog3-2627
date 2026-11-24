@@ -5,27 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5d0f8ff-0c59-48e1-b695-e8db6c6a4c85" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/client/controller/DataModelAwareController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/controller/CheckingAccountsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/model/DataModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/model/MailBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/view/ViewChanger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/DataModelAwareController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/controller/DataModelAwareController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/InboxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/controller/InboxController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/ViewChanger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/view/ViewChanger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/client/inbox.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/client/inbox.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/client/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/client/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/server/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/model/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/server/DataModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/server/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/resources/accounts.json" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/resources/accounts.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/main/resources/com/example/server/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/resources/com/example/server/checkingAccounts.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/main/resources/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/server/controller/CheckingAccountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/controller/CheckingAccountsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/server/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/model/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/server/model/DataModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/model/DataModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/server/model/MailBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/model/MailBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/resources/com/example/server/checkingAccounts.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/resources/com/example/server/checkingAccounts.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

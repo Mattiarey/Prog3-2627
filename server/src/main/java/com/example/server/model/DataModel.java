@@ -1,5 +1,9 @@
 package com.example.server.model;
 
+import javafx.beans.property.ListProperty;
+import javafx.beans.property.SimpleListProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import org.json.simple.JSONArray;
@@ -12,26 +16,53 @@ import java.util.ArrayList;
 
 public class DataModel {
     private ArrayList<Account>storedAccounts;
+    private SimpleStringProperty currentMailProperty;
     private ObservableList<Account>accountsList;
+    private ListProperty<Mail>selectedAccountMails;
+    private ObservableList<String>terminalList;
 
     public DataModel() throws IOException {
         storedAccounts = new ArrayList<>();
+        currentMailProperty = new SimpleStringProperty();
         accountsList = FXCollections.observableArrayList();
+        selectedAccountMails = new SimpleListProperty<>(FXCollections.observableArrayList());
+        terminalList = FXCollections.observableArrayList();
     }
 
-    public ObservableList<Account>getAccountsList() {
+    public ListProperty<Mail>getSelectedAccountProperty() {
+        return selectedAccountMails;
+    }
+
+    public StringProperty getCurrentMailProperty() {
+        return currentMailProperty;
+    }
+
+    public ObservableList<Account>getAccountsListProperty() {
         return accountsList;
     }
 
-    public void getMailAccounts() {
+    public ObservableList<String>getTerminalListProperty() {
+        return terminalList;
+    }
+
+    public void InitializeData() {
+        chargeAccounts();
+        displayMailBox(storedAccounts.getFirst());
+    }
+
+    private void displayMailBox(Account account) {
+        selectedAccountMails.addAll(account.getMailBox().getMails());
+    }
+
+    private void chargeAccounts() {
         JSONParser parser = new JSONParser();
         try(FileReader reader = new FileReader("src/main/resources/accounts.json")) {
             JSONArray accountsArray = (JSONArray) parser.parse(reader);
 
             for(Object obj : accountsArray) {
                 JSONObject account = (JSONObject) obj;
-                String nameString = (String) account.get("AccountName");
                 String mailString = (String) account.get("AccountMail");
+                String nameString = (String) account.get("AccountName");
 
                 MailBox mailBox = new MailBox();
                 JSONArray inbox = (JSONArray) account.get("Inbox");
@@ -44,14 +75,12 @@ public class DataModel {
                     boolean isRead = (boolean) mail.get("IsRead");
                     mailBox.addMail(messageId, from, subject, body, isRead);
                 }
-                storedAccounts.add(new Account(nameString, mailString, mailBox));
+                storedAccounts.add(new Account(mailString, nameString, mailBox));
             }
-        } catch (Exception e) {
+        }
+        catch(Exception e) {
             e.printStackTrace();
         }
-    }
-
-    public void displayMailAccounts() {
         accountsList.addAll(storedAccounts);
     }
 }
