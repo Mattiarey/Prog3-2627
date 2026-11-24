@@ -1,10 +1,14 @@
 module com.example.server {
     requires javafx.controls;
     requires javafx.fxml;
-    requires org.json;
     requires json.simple;
-
 
     opens com.example.server to javafx.fxml;
     exports com.example.server;
+    exports com.example.server.model;
+    opens com.example.server.model to javafx.fxml;
+    exports com.example.server.controller;
+    opens com.example.server.controller to javafx.fxml;
+    exports com.example.server.view;
+    opens com.example.server.view to javafx.fxml;
 }

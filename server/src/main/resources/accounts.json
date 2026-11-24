@@ -1,19 +1,62 @@
 [
   {
-    "AccountId": "0",
     "AccountName": "Mario Rossi",
-    "AccountMail": "mariorossi@unito.it"
+    "AccountMail": "mariorossi@unito.it",
+    "Inbox": [
+      {
+        "MessageId": "msg_101",
+        "From": "graziellaverdi@unito.it",
+        "Subject": "Programma seminario del mese prossimo",
+        "Body": "Ciao Mario, ti allego la locandina provvisoria per l'incontro con gli ospiti esterni.",
+        "IsRead": true
+      },
+      {
+        "MessageId": "msg_102",
+        "From": "lucabianchi@unito.it",
+        "Subject": "Appunti lezione di algoritmi",
+        "Body": "Ciao Mario, hai per caso gli appunti dell'ultima esercitazione? Non sono riuscito a venire.",
+        "IsRead": false
+      }
+    ]
   },
-
   {
-    "AccountId": "1",
     "AccountName": "Graziella Verdi",
-    "AccountMail": "graziellaverdi@unito.it"
+    "AccountMail": "graziellaverdi@unito.it",
+    "Inbox": [
+      {
+        "MessageId": "msg_201",
+        "From": "mariorossi@unito.it",
+        "Subject": "Convocazione consiglio di dipartimento",
+        "Body": "Gentile Graziella, la invitiamo alla riunione di giovedì alle ore 15:00 in aula magna.",
+        "IsRead": true
+      },
+      {
+        "MessageId": "msg_202",
+        "From": "lucabianchi@unito.it",
+        "Subject": "Conferma learning agreement",
+        "Body": "Ciao Graziella, il mio learning agreement è stato approvato e firmato dal coordinatore.",
+        "IsRead": false
+      }
+    ]
   },
-
   {
-    "AccountId": "2",
     "AccountName": "Luca Bianchi",
-    "AccountMail": "lucabianchi@unito.it"
+    "AccountMail": "lucabianchi@unito.it",
+    "Inbox": [
+      {
+        "MessageId": "msg_301",
+        "From": "mariorossi@unito.it",
+        "Subject": "Bozza articolo su reti neurali",
+        "Body": "Ciao Luca, ho caricato la revisione del capitolo 3. Fammi sapere cosa ne pensi.",
+        "IsRead": true
+      },
+      {
+        "MessageId": "msg_302",
+        "From": "graziellaverdi@unito.it",
+        "Subject": "Disponibilità volumi richiesti",
+        "Body": "Ciao Luca, i libri richiesti in prestito interbibliotecario sono pronti per il ritiro.",
+        "IsRead": false
+      }
+    ]
   }
 ]

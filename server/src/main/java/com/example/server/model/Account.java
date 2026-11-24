@@ -1,14 +1,14 @@
-package com.example.server;
+package com.example.server.model;
 
 public class Account {
-    private final int id;
     private final String email;
     private final String name;
+    private final MailBox mailBox;
 
-    public Account(int id, String email, String name) {
-        this.id = id;
+    public Account(String email, String name, MailBox mailBox) {
         this.email = email;
         this.name = name;
+        this.mailBox = mailBox;
     }
 
     @Override

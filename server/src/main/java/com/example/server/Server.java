@@ -1,8 +1,8 @@
 package com.example.server;
 
+import com.example.server.model.DataModel;
+import com.example.server.view.ViewChanger;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -16,12 +16,8 @@ public class Server {
         @Override
         public void start(Stage stage) throws IOException {
             DataModel dataModel = new DataModel();
-            FXMLLoader fxmlLoader = new FXMLLoader(StartServer.class.getResource("hello-view.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-            stage.setTitle("Hello!");
-            stage.setScene(scene);
-            stage.show();
-            dataModel.setup();
+            ViewChanger viewChanger = new ViewChanger(stage, dataModel);
+            viewChanger.setView("checkingAccounts.fxml", "Server - Visione degli account", 600, 500);
         }
     }
 }

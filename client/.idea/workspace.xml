@@ -5,13 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5d0f8ff-0c59-48e1-b695-e8db6c6a4c85" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/inbox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/client/controller/DataModelAwareController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/controller/CheckingAccountsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/model/DataModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/model/MailBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/view/ViewChanger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/InboxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/InboxController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/DataModelAwareController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/controller/DataModelAwareController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/InboxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/controller/InboxController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/ViewChanger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/view/ViewChanger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/client/inbox.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/client/inbox.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/client/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/client/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/server/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/model/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/server/DataModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/server/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/example/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/com/example/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/resources/accounts.json" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/resources/accounts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/resources/com/example/server/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/main/resources/com/example/server/checkingAccounts.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,27 +155,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Launcher.executor": "Run",
-    "Application.client.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ACER/Desktop/UNI/2026-2027/Primo semestre/LAB/Prog III/PROGETTO-D'ESAME/Prog3-2627/client",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
+    &quot;Application.client.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ACER/Desktop/UNI/2026-2027/Primo semestre/LAB/Prog III/PROGETTO-D'ESAME/Prog3-2627/client&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ACER\Desktop\UNI\2026-2027\Primo semestre\LAB\Prog III\PROGETTO-D'ESAME\Prog3-2627\client\src\main\resources" />

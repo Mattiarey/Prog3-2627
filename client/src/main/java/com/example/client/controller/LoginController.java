@@ -1,5 +1,6 @@
-package com.example.client;
+package com.example.client.controller;
 
+import com.example.client.view.ViewChanger;
 import com.example.client.model.DataModel;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -10,7 +11,7 @@ import java.io.IOException;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
-public class LoginController implements DataModelAwareController{
+public class LoginController implements DataModelAwareController {
     private DataModel dataModel;
     private ViewChanger viewChanger;
     private static final Pattern EMAIL_REGEX = Pattern.compile(

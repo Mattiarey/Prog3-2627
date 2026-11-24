@@ -1,12 +1,13 @@
-package com.example.client;
+package com.example.client.controller;
 
+import com.example.client.view.ViewChanger;
 import com.example.client.model.DataModel;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import java.io.IOException;
 import java.util.concurrent.*;
 
-public class InboxController implements DataModelAwareController{
+public class InboxController implements DataModelAwareController {
     private DataModel dataModel;
     private ViewChanger viewChanger;
 

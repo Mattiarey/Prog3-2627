@@ -15,7 +15,7 @@
             stylesheets="@../../../css/login.css"
             xmlns:fx="http://javafx.com/fxml/1"
             xmlns="http://javafx.com/javafx/17.0.12"
-            fx:controller="com.example.client.LoginController"
+            fx:controller="com.example.client.controller.LoginController"
 >
     <VBox maxWidth="360.0" spacing="14.0" styleClass="login-card">
         <padding>

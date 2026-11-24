@@ -1,6 +1,7 @@
-package com.example.client;
+package com.example.server.view;
 
-import com.example.client.model.DataModel;
+import com.example.server.controller.DataModelAwareController;
+import com.example.server.model.DataModel;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -18,7 +19,7 @@ public class ViewChanger {
     }
 
     public void setView(String fxmlFileName, String title, double width, double height) throws IOException {
-        URL fxmlUrl = ViewChanger.class.getResource(fxmlFileName);
+        URL fxmlUrl = ViewChanger.class.getResource("/com/example/server/" + fxmlFileName);
         if(fxmlUrl == null) {
             throw new IOException("File FXML non trovato: " + fxmlFileName);
         }
