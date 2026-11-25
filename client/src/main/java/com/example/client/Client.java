@@ -17,7 +17,7 @@ public class Client {
         public void start(Stage stage) throws IOException {
             DataModel dataModel = new DataModel();
             ViewChanger viewChanger = new ViewChanger(stage, dataModel);
-            viewChanger.setView("login.fxml", "Client - Pagina di Login", 600, 500);
+            viewChanger.setView("login.fxml", "Client - Login", 600, 500);
         }
     }
 }

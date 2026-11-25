@@ -15,11 +15,6 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
     <ListView fx:id="mailListView" />
-    <TableView fx:id="mailTableView">
-        <columns>
-            <TableColumn fx:id="senderColumn" text="Mittente" />
-            <TableColumn fx:id="subjectColumn" text="Oggetto" />
-        </columns>
-    </TableView>
-    <Button fx:id="exitButton" onAction="#onExitButtonClick" text="Esci"/>
+    <TextArea fx:id="mailView"/>
+    <Button onAction="#onExitButtonClick" text="Esci"/>
 </VBox>

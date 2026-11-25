@@ -36,7 +36,7 @@ public class LoginController implements DataModelAwareController {
     private void onLoginButtonClick() throws IOException {
         Matcher matcher = EMAIL_REGEX.matcher(emailField.textProperty().getValue());
         if(matcher.matches()) {
-            viewChanger.setView("inbox.fxml", "Client - Login", 600, 500);
+            viewChanger.setView("inbox.fxml", "Client - Posta in arrivo", 600, 500);
         }
         else {
             feedbackLabel.setText("Invalid email!");

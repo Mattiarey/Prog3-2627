@@ -48,6 +48,11 @@ public class DataModel {
     public void InitializeData() {
         chargeAccounts();
         displayMailBox(storedAccounts.getFirst());
+        addLog("Inizializzazione server - Carico le inbox degli account");
+    }
+
+    private void addLog(String message) {
+        terminalList.add(message);
     }
 
     private void displayMailBox(Account account) {

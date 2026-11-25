@@ -1,10 +1,13 @@
 package com.example.client.controller;
 
+import com.example.client.model.Mail;
 import com.example.client.view.ViewChanger;
 import com.example.client.model.DataModel;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import java.io.IOException;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.concurrent.*;
 
 public class InboxController implements DataModelAwareController {
@@ -12,39 +15,36 @@ public class InboxController implements DataModelAwareController {
     private ViewChanger viewChanger;
 
     @FXML
-    private ListView mailListView;
-
-
+    private ListView<Mail>mailListView;
     @FXML
-    private TableView mailTableView;
-
-    @FXML
-    private Button exitButton;
+    private TextArea mailView;
 
     public void setup(DataModel dataModel, ViewChanger viewChanger) {
         this.dataModel = dataModel;
         this.viewChanger = viewChanger;
-        /*
-            Binding delle properties della inbox nel model con i valori della view
-         */
-        try(ScheduledExecutorService exec = Executors.newScheduledThreadPool(1)) {
-                exec.scheduleAtFixedRate(new Polling(), 3, 3, TimeUnit.SECONDS);
+        mailListView.setItems(dataModel.getInboxListProperty());
+        mailView.textProperty().bind(dataModel.getCurrentMailProperty());
+        try {
+            ScheduledExecutorService exec = Executors.newScheduledThreadPool(1);
+            exec.scheduleAtFixedRate(new Polling(), 3, 3, TimeUnit.SECONDS);
         }
         catch(Exception e) {
             System.out.println(e.getMessage());
         }
     }
     
-    public static class Polling implements Runnable {
+    public class Polling implements Runnable {
         @Override
         public void run() {
-            //chiamata al server con richiesta della mia inbox
+            ArrayList<Mail>fakeMails = new ArrayList<>();
+            fakeMails.add(new Mail("1", "mario", "prova", "prova messaggio", false));
+            dataModel.updateMails(fakeMails);
         }
     }
 
     @FXML
     private void onExitButtonClick() throws IOException {
-        viewChanger.setView("login.fxml", "Client - Posta in arrivo", 600, 500);
+        viewChanger.setView("login.fxml", "Client - Login", 600, 500);
     }
 
 }
