@@ -1,13 +1,16 @@
 package com.example.client.model;
 
-public class Mail {
+import java.util.ArrayList;
+
+public class Email {
     private String messageId;
     private String from;
+    private ArrayList<Account>to;
     private String subject;
     private String body;
     private boolean isRead;
 
-    public Mail(String messageId, String from, String subject, String body, boolean isRead) {
+    public Email(String messageId, String from, String subject, String body, boolean isRead) {
         this.messageId = messageId;
         this.from = from;
         this.subject = subject;

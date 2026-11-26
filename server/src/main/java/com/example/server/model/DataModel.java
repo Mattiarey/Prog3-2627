@@ -15,30 +15,24 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class DataModel {
-    private ArrayList<Account>storedAccounts;
+    private ArrayList<MailBox>storedMailBox;
+    private ListProperty<MailBox>selectedInboxMails;
     private SimpleStringProperty currentMailProperty;
-    private ObservableList<Account>accountsList;
-    private ListProperty<Mail>selectedAccountMails;
     private ObservableList<String>terminalList;
 
     public DataModel() throws IOException {
-        storedAccounts = new ArrayList<>();
+        storedMailBox = new ArrayList<>();
+        selectedInboxMails = new SimpleListProperty<>(FXCollections.observableArrayList());
         currentMailProperty = new SimpleStringProperty();
-        accountsList = FXCollections.observableArrayList();
-        selectedAccountMails = new SimpleListProperty<>(FXCollections.observableArrayList());
         terminalList = FXCollections.observableArrayList();
     }
 
-    public ListProperty<Mail>getSelectedAccountProperty() {
-        return selectedAccountMails;
+    public ListProperty<MailBox>getSelectedInboxProperty() {
+        return selectedInboxMails;
     }
 
     public StringProperty getCurrentMailProperty() {
         return currentMailProperty;
-    }
-
-    public ObservableList<Account>getAccountsListProperty() {
-        return accountsList;
     }
 
     public ObservableList<String>getTerminalListProperty() {
@@ -46,8 +40,8 @@ public class DataModel {
     }
 
     public void InitializeData() {
-        chargeAccounts();
-        displayMailBox(storedAccounts.getFirst());
+        chargeMailBox();
+        displayMailBox(storedMailBox.getFirst());
         addLog("Inizializzazione server - Carico le inbox degli account");
     }
 
@@ -55,11 +49,11 @@ public class DataModel {
         terminalList.add(message);
     }
 
-    private void displayMailBox(Account account) {
-        selectedAccountMails.addAll(account.getMailBox().getMails());
+    private void displayMailBox(MailBox box) {
+        selectedInboxMails.addAll(storedMailBox);
     }
 
-    private void chargeAccounts() {
+    private void chargeMailBox() {
         JSONParser parser = new JSONParser();
         try(FileReader reader = new FileReader("src/main/resources/accounts.json")) {
             JSONArray accountsArray = (JSONArray) parser.parse(reader);
@@ -69,7 +63,7 @@ public class DataModel {
                 String mailString = (String) account.get("AccountMail");
                 String nameString = (String) account.get("AccountName");
 
-                MailBox mailBox = new MailBox();
+                MailBox mailBox = new MailBox(nameString, mailString);
                 JSONArray inbox = (JSONArray) account.get("Inbox");
                 for(Object box : inbox) {
                     JSONObject mail = (JSONObject) box;
@@ -80,12 +74,11 @@ public class DataModel {
                     boolean isRead = (boolean) mail.get("IsRead");
                     mailBox.addMail(messageId, from, subject, body, isRead);
                 }
-                storedAccounts.add(new Account(mailString, nameString, mailBox));
+                storedMailBox.add(mailBox);
             }
         }
         catch(Exception e) {
             e.printStackTrace();
         }
-        accountsList.addAll(storedAccounts);
     }
 }

@@ -1,12 +1,11 @@
 package com.example.client.controller;
 
-import com.example.client.model.Mail;
+import com.example.client.model.Email;
 import com.example.client.view.ViewChanger;
 import com.example.client.model.DataModel;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.concurrent.*;
 
@@ -15,7 +14,7 @@ public class InboxController implements DataModelAwareController {
     private ViewChanger viewChanger;
 
     @FXML
-    private ListView<Mail>mailListView;
+    private ListView<Email>mailListView;
     @FXML
     private TextArea mailView;
 
@@ -36,9 +35,9 @@ public class InboxController implements DataModelAwareController {
     public class Polling implements Runnable {
         @Override
         public void run() {
-            ArrayList<Mail>fakeMails = new ArrayList<>();
-            fakeMails.add(new Mail("1", "mario", "prova", "prova messaggio", false));
-            dataModel.updateMails(fakeMails);
+            ArrayList<Email> fakeEmails = new ArrayList<>();
+            fakeEmails.add(new Email("1", "mario", "prova", "prova messaggio", false));
+            dataModel.updateMails(fakeEmails);
         }
     }
 

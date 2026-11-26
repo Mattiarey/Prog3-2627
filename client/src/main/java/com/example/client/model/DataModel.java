@@ -1,32 +1,30 @@
 package com.example.client.model;
 
-import javafx.beans.property.SimpleListProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-import javax.swing.text.html.ListView;
 import java.util.ArrayList;
 
 public class DataModel {
-    private final ObservableList<Mail>mailList;
+    private final ObservableList<Email> emailList;
     private SimpleStringProperty currentMailProperty;
 
     public DataModel() {
-        this.mailList = FXCollections.observableArrayList();
+        this.emailList = FXCollections.observableArrayList();
         this.currentMailProperty = new SimpleStringProperty();
     }
 
-    public ObservableList<Mail>getInboxListProperty() {
-        return mailList;
+    public ObservableList<Email>getInboxListProperty() {
+        return emailList;
     }
 
     public SimpleStringProperty getCurrentMailProperty() {
         return currentMailProperty;
     }
 
-    public void updateMails(ArrayList<Mail>mailList) {
-        getInboxListProperty().addAll(mailList);
+    public void updateMails(ArrayList<Email> emailList) {
+        getInboxListProperty().addAll(emailList);
     }
 
 

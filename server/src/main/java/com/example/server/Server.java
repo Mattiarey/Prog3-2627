@@ -17,7 +17,7 @@ public class Server {
         public void start(Stage stage) throws IOException {
             DataModel dataModel = new DataModel();
             ViewChanger viewChanger = new ViewChanger(stage, dataModel);
-            viewChanger.setView("checkingAccounts.fxml", "Server - Visione degli account", 600, 500);
+            viewChanger.setView("checkingAccounts.fxml", "Server - Terminale dei LOG", 600, 500);
         }
     }
 }

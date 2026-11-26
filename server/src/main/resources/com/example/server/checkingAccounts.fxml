@@ -31,19 +31,6 @@
     </rowConstraints>
 
     <VBox spacing="6.0"
-          GridPane.columnIndex="0"
-          GridPane.rowIndex="0"
-          maxWidth="Infinity"
-          maxHeight="Infinity">
-        <Label text="Account" styleClass="section-title" />
-        <ListView fx:id="accountsView"
-                  VBox.vgrow="ALWAYS"
-                  maxWidth="Infinity"
-                  maxHeight="Infinity"
-        />
-    </VBox>
-
-    <VBox spacing="6.0"
           GridPane.columnIndex="1"
           GridPane.rowIndex="0"
           maxWidth="Infinity"
@@ -59,10 +46,10 @@
 
     <VBox spacing="6.0"
           GridPane.columnIndex="0"
-          GridPane.rowIndex="1"
+          GridPane.rowIndex="0"
           maxWidth="Infinity"
           maxHeight="Infinity">
-        <Label text="Inbox dell'account selezionato" styleClass="section-title" />
+        <Label text="Inbox" styleClass="section-title" />
         <ListView fx:id="inboxView"
                   VBox.vgrow="ALWAYS"
                   maxWidth="Infinity"
@@ -71,11 +58,11 @@
     </VBox>
 
     <VBox spacing="6.0"
-          GridPane.columnIndex="1"
+          GridPane.columnIndex="0"
           GridPane.rowIndex="1"
           maxWidth="Infinity"
           maxHeight="Infinity">
-        <Label text="Dettaglio mail" styleClass="section-title" />
+        <Label text="Elenco mail" styleClass="section-title" />
         <TextArea fx:id="mailView"
                   styleClass="mail-detail-view"
                   editable="false"
