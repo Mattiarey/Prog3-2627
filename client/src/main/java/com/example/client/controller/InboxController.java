@@ -36,7 +36,7 @@ public class InboxController implements DataModelAwareController {
         @Override
         public void run() {
             ArrayList<Email> fakeEmails = new ArrayList<>();
-            fakeEmails.add(new Email("1", "mario", "prova", "prova messaggio", false));
+            fakeEmails.add(new Email("1", "mario", "maria", "prova", "prova messaggio", false));
             dataModel.updateMails(fakeEmails);
         }
     }
