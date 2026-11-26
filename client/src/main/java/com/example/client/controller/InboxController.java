@@ -23,22 +23,6 @@ public class InboxController implements DataModelAwareController {
         this.viewChanger = viewChanger;
         mailListView.setItems(dataModel.getInboxListProperty());
         mailView.textProperty().bind(dataModel.getCurrentMailProperty());
-        try {
-            ScheduledExecutorService exec = Executors.newScheduledThreadPool(1);
-            exec.scheduleAtFixedRate(new Polling(), 3, 3, TimeUnit.SECONDS);
-        }
-        catch(Exception e) {
-            System.out.println(e.getMessage());
-        }
-    }
-    
-    public class Polling implements Runnable {
-        @Override
-        public void run() {
-            ArrayList<Email> fakeEmails = new ArrayList<>();
-            fakeEmails.add(new Email("1", "mario", "maria", "prova", "prova messaggio", false));
-            dataModel.updateMails(fakeEmails);
-        }
     }
 
     @FXML

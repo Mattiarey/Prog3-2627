@@ -1,7 +1,5 @@
 package com.example.client.model;
 
-import java.util.ArrayList;
-
 public class Email {
     private String messageId;
     private String from;
@@ -21,11 +19,6 @@ public class Email {
 
     @Override
     public String toString() {
-        return subject + " | " + from + "\n";
+        return subject + " | " + from + " | " + body + " | " + to + "\n";
     }
-
-    public String getCompleteMail() {
-        return toString() + "Body: \n" + body;
-    }
-
 }

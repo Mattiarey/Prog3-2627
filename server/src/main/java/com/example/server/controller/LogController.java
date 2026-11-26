@@ -1,17 +1,13 @@
 package com.example.server.controller;
 
-import com.example.server.model.Mail;
 import com.example.server.model.MailBox;
-import com.example.server.view.ViewChanger;
 import com.example.server.model.DataModel;
-import javafx.application.Platform;
 import javafx.beans.binding.Bindings;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
-public class CheckingAccountsController implements DataModelAwareController{
+public class LogController {
     DataModel dataModel;
-    ViewChanger viewChanger;
 
     @FXML
     private ListView<MailBox>inboxView;
@@ -20,16 +16,11 @@ public class CheckingAccountsController implements DataModelAwareController{
     @FXML
     private ListView<String>serverLogView;
 
-    public void setup(DataModel dataModel, ViewChanger viewChanger) {
+    public void setup(DataModel dataModel) {
         this.dataModel = dataModel;
-        this.viewChanger = viewChanger;
-        dataModel.InitializeData();
         inboxView.setItems(dataModel.getSelectedInboxProperty());
         mailView.textProperty().bind(dataModel.getCurrentMailProperty());
         serverLogView.setItems(dataModel.getTerminalListProperty());
-
-        serverLogView.setFocusTraversable(true);
-        Platform.runLater(() -> serverLogView.requestFocus());
 
         dataModel.getCurrentMailProperty().bind(
                 Bindings.createStringBinding(

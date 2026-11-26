@@ -1,5 +1,6 @@
 package com.example.client.controller;
 
+import com.example.client.network.SocketClient;
 import com.example.client.view.ViewChanger;
 import com.example.client.model.DataModel;
 import javafx.fxml.FXML;
@@ -14,9 +15,7 @@ import java.util.regex.Matcher;
 public class LoginController implements DataModelAwareController {
     private DataModel dataModel;
     private ViewChanger viewChanger;
-    private static final Pattern EMAIL_REGEX = Pattern.compile(
-            "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$"
-    );
+    private static final Pattern EMAIL_REGEX = Pattern.compile("^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$");
 
     public void setup(DataModel dataModel, ViewChanger viewChanger) {
         this.dataModel = dataModel;
@@ -25,10 +24,8 @@ public class LoginController implements DataModelAwareController {
 
     @FXML
     private TextField emailField;
-
     @FXML
     private Button loginButton;
-
     @FXML
     private Label feedbackLabel;
 
@@ -37,6 +34,7 @@ public class LoginController implements DataModelAwareController {
         Matcher matcher = EMAIL_REGEX.matcher(emailField.textProperty().getValue());
         if(matcher.matches()) {
             viewChanger.setView("inbox.fxml", "Client - Posta in arrivo", 600, 500);
+            //SocketClient socketClient = new SocketClient(9000);
         }
         else {
             feedbackLabel.setText("Invalid email!");

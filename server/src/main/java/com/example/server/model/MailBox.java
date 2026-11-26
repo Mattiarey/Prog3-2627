@@ -6,20 +6,20 @@ import java.util.List;
 public class MailBox {
     private final String mailBoxName;
     private final String mailBoxEmail;
-    private final List<Mail>mails;
+    private final List<Email>emails;
 
     public MailBox(String mailBoxName, String mailBoxEmail) {
         this.mailBoxName = mailBoxName;
         this.mailBoxEmail = mailBoxEmail;
-        this.mails = new ArrayList<>();
+        this.emails = new ArrayList<>();
     }
 
-    public void addMail(String messageId, String from, String subject, String body, boolean isRead) {
-        mails.add(new Mail(messageId, from, subject, body, isRead));
+    public void addMail(String messageId, String from, String to, String subject, String body, boolean isRead) {
+        emails.add(new Email(messageId, from, to, subject, body, isRead));
     }
 
-    public List<Mail>getMails() {
-        return new ArrayList<>(mails);
+    public List<Email>getMails() {
+        return new ArrayList<>(emails);
     }
 
     public String toString() {

@@ -1,17 +1,17 @@
 package com.example.server.model;
 
-import javafx.beans.property.ReadOnlyIntegerProperty;
-
-public class Mail {
+public class Email {
     private String messageId;
     private String from;
+    private String to;
     private String subject;
     private String body;
     private boolean isRead;
 
-    public Mail(String messageId, String from, String subject, String body, boolean isRead) {
+    public Email(String messageId, String from, String to, String subject, String body, boolean isRead) {
         this.messageId = messageId;
         this.from = from;
+        this.to = to;
         this.subject = subject;
         this.body = body;
         this.isRead = isRead;
@@ -19,11 +19,6 @@ public class Mail {
 
     @Override
     public String toString() {
-        return subject + " | " + from + "\n";
+        return subject + " | " + from + " | " + body + " | " + to + "\n";
     }
-
-    public String getCompleteMail() {
-        return toString() + "Body: \n" + body;
-    }
-
 }

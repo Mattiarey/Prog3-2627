@@ -11,7 +11,7 @@
 
 <GridPane xmlns="http://javafx.com/javafx/17.0.12"
           xmlns:fx="http://javafx.com/fxml/1"
-          fx:controller="com.example.server.controller.CheckingAccountsController"
+          fx:controller="com.example.server.controller.LogController"
           stylesheets="@css/dashboard.css"
           styleClass="root-pane"
           hgap="16.0"

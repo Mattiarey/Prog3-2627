@@ -11,16 +11,15 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class DataModel {
-    private ArrayList<MailBox>storedMailBox;
-    private ListProperty<MailBox>selectedInboxMails;
-    private SimpleStringProperty currentMailProperty;
-    private ObservableList<String>terminalList;
+    private static ArrayList<MailBox>storedMailBox;
+    private final ListProperty<MailBox>selectedInboxMails;
+    private final SimpleStringProperty currentMailProperty;
+    private final ObservableList<String>terminalList;
 
-    public DataModel() throws IOException {
+    public DataModel() {
         storedMailBox = new ArrayList<>();
         selectedInboxMails = new SimpleListProperty<>(FXCollections.observableArrayList());
         currentMailProperty = new SimpleStringProperty();
@@ -39,8 +38,12 @@ public class DataModel {
         return terminalList;
     }
 
-    public void InitializeData() {
-        chargeMailBox();
+    public int getMailBoxSize() {
+        return storedMailBox.size();
+    }
+
+    public void initializeData() {
+        loadMailBox();
         displayMailBox(storedMailBox.getFirst());
         addLog("Inizializzazione server - Carico le inbox degli account");
     }
@@ -53,7 +56,7 @@ public class DataModel {
         selectedInboxMails.addAll(storedMailBox);
     }
 
-    private void chargeMailBox() {
+    private void loadMailBox() {
         JSONParser parser = new JSONParser();
         try(FileReader reader = new FileReader("src/main/resources/accounts.json")) {
             JSONArray accountsArray = (JSONArray) parser.parse(reader);
@@ -69,10 +72,11 @@ public class DataModel {
                     JSONObject mail = (JSONObject) box;
                     String messageId = (String) mail.get("MessageId");
                     String from = (String) mail.get("From");
+                    String to = (String) mail.get("To");
                     String subject = (String) mail.get("Subject");
                     String body = (String) mail.get("Body");
                     boolean isRead = (boolean) mail.get("IsRead");
-                    mailBox.addMail(messageId, from, subject, body, isRead);
+                    mailBox.addMail(messageId, from, to, subject, body, isRead);
                 }
                 storedMailBox.add(mailBox);
             }
